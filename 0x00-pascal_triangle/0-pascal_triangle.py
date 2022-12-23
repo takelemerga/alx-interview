@@ -4,7 +4,7 @@ pascal triangle
 """
 
 
-def pascal(n):
+def pascal_triangle(n):
     """
     print pascal triangle
     """
