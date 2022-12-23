@@ -16,8 +16,7 @@ def pascal(n):
             for i in range(1, line + 1):
                 lst.append(k)
                 k = int(k * (line - i)/i)
-            print(lst)
             lis.append(lst)
-        print(lis)
+        return (lis)
     else:
-        print(lis)
+        return (lis)
