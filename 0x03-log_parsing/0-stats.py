@@ -7,7 +7,7 @@ import sys
 
 def print_statistics(file_size, status_codes):
     """
-    displays stats 
+    displays stats
     """
     print("File size: {}".format(file_size))
     codes_sorted = sorted(status_codes.keys())
@@ -17,7 +17,8 @@ def print_statistics(file_size, status_codes):
 
 
 status_code_dict = {'200': 0, '301': 0, '400': 0, '401': 0,
-               '403': 0, '404': 0, '405': 0, '500': 0}
+                    '403': 0, '404': 0, '405': 0, '500': 0}
+
 file_size_total = 0
 number_of_lines = 0
 
