@@ -19,4 +19,3 @@ def makeChange(coins, total):
             temp += total // coin
             total = total % coin
     return temp if total == 0 else -1
-
