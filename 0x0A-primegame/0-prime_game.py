@@ -19,7 +19,7 @@ def isWinner(x, nums):
     elif (mariaWins < benWins):
         winner = "Ben"
     else:
-        winner = "None"
+        return None
     return winner
 
 
