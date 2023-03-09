@@ -39,10 +39,8 @@ def mariaPlay(lst):
     for k in lst:
         prime = isPrime(k)
         if (prime):
-            for h in range(k):
-                multiples = h * k
-                if (multiples in lst):
-                    lst.remove(multiples)
+            lst = [ele for ele in lst if ele % k != 0]
+            break
     if (prime):
         benPlay(lst)
     else:
@@ -56,10 +54,8 @@ def benPlay(lst):
     for k in lst:
         prime = isPrime(k)
         if (prime):
-            for h in range(k):
-                multiples = h * k
-                if (multiples in lst):
-                    lst.remove(multiples)
+            lst = [ele for ele in lst if ele % k != 0]
+            break
     if (prime):
         mariaPlay(lst)
     else:
@@ -68,7 +64,7 @@ def benPlay(lst):
 
 
 def isPrime(n):
-    """check number"""
+    """check if n is prime number"""
     if (n <= 1):
         return False
     for i in range(2, n):
