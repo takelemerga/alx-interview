@@ -15,9 +15,9 @@ def isWinner(x, nums):
     for i in nums:
         playgame(i)
     if (mariaWins > benWins):
-        winner = "MARIA"
+        winner = "Maria"
     elif (mariaWins < benWins):
-        winner = "BEN"
+        winner = "Ben"
     else:
         winner = "None"
     return winner
