@@ -12,6 +12,9 @@ def isWinner(x, nums):
     global mariaWins
     global benWins
 
+    if x <= 0:
+        return None
+
     for i in nums:
         playgame(i)
     if (mariaWins > benWins):
